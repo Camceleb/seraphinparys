@@ -26,7 +26,7 @@ class AuthentificationModele extends modele
             $authentificationEnCours->getMotdepasse() == $authentificationExistant['motdepasse']) {
 
             $_SESSION['login'] = $authentificationEnCours->getLogin();
-            $_SESSION['prenomnom'] = $authentificationExistant['prenom'] . " " . ['nom'];
+            $_SESSION['prenomnom'] = $authentificationExistant['prenom'] . " " . $authentificationExistant['nom'];
 
             return true;
             // return true évite d'écrire un else

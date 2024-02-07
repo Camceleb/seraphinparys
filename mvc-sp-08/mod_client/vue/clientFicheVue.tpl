@@ -77,7 +77,6 @@
     </div>
 
 
-
     <div class="content mt-3">
         <div class="animated fadeIn">
 
@@ -135,7 +134,7 @@
 
                             <div class="card-body card-block">
 
-                                <div class="col-mb-6"><input type="button" class="btn btn-submit" value="Retour"
+                                <div class="col-md-6"><input type="button" class="btn btn-submit" value="Retour"
                                                              onclick="location.href='index.php?gestion=client'">
                                 </div>
                                 <div class="col-md-6">
@@ -148,7 +147,18 @@
                     </div>
                 </div>
 
-            </div><!-- .animated -->
+            </div>
+            <!-- .animated -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header"><strong>Statistiques</strong></div>
+                    <div class="card-body">
+                        <div class="form-group"><strong>CA réalisé : </strong>{$unClient->getStat01()} €</div>
+                        <div class="form-group"><strong>Pourcentage du CA réalisé : </strong>VALEUR</div>
+                        <div class="form-group"><strong>Ses 5 meilleurs achats : </strong>VALEUR</div>
+                    </div>
+                </div>
+            </div>
         </div><!-- .content -->
 
 
