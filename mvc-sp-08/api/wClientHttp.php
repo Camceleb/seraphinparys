@@ -13,7 +13,7 @@ try {
 
         $cnx = new PDO('mysql:host=' . SERVEUR . ';dbname=' . BASE, NOM, PASSE, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8", PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
-        $sql = 'SELECT * FROM cilent';
+        $sql = 'SELECT * FROM client';
 
         $isRequete = $cnx->query($sql);
 
